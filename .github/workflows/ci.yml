@@ -19,7 +19,7 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           config: baseUrl=https://gifna-stage.who.int
-          working-directory: CY-GIFNA-CICD
+          working-directory: ''
           start: npm start
           wait-on: 'https://gifna-stage.who.int'
 
