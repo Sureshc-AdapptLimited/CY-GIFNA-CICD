@@ -1,7 +1,12 @@
 describe('template spec', () => {
-    it('passes', () => {
-        cy.visit('/', { headers: { "Accept-Encoding": "gzip, deflate" } })
-        // cy.wait(6000);
+  it("Open website", () => {
+    cy.visit(
+      "https://gifna-stage.who.int/"
+    );
+    cy.wait(6000);
+  });
+  it('Login into the application using credentials', () => {
+        // cy.visit('/', { headers: { "Accept-Encoding": "gzip, deflate" } })
         cy.contains('button', 'Log in').click({ force: true })
         cy.wait(5000);
         cy.contains('button', ' Log in with Azure').click({ force: true })
@@ -16,6 +21,6 @@ describe('template spec', () => {
             cy.get('input[data-report-event*="Signin_Submit"]').click({ force: true })
         })
         cy.wait(3000);
-    })
   })
+})
   

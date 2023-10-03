@@ -1,4 +1,4 @@
-name: Run Cypress Tests
+name: Cypress Tests
 on: [push]
 jobs:
   Gifna-Automate:
