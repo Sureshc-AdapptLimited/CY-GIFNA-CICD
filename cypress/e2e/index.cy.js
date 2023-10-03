@@ -1,6 +1,11 @@
 describe('template spec', () => {
   beforeEach(function() {
-    cy.visit('/')
+    cy.visit(('https://gifna-stage.who.int/'), {
+      headers: {
+        "Accept": "application/json, text/plain, */*",
+        "User-Agent": "axios/0.18.0"
+      }
+    })
     cy.wait(6000);
     cy.log('Page loaded successfully');
   });
