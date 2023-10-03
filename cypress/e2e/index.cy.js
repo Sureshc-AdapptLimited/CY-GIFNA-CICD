@@ -1,8 +1,7 @@
 describe('template spec', () => {
   it("Open website", () => {
-    cy.visit(
-      "https://gifna-stage.who.int/"
-    );
+    cy.visit("https://gifna-stage.who.int/", { retries: 3 });
+    cy.log('Page loaded successfully');
     cy.wait(6000);
   });
   it('Login into the application using credentials', () => {
