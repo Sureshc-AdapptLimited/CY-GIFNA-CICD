@@ -1,8 +1,8 @@
 describe('template spec', () => {
   it("Open website", () => {
-    cy.visit("https://gifna-stage.who.int/", { retries: 3 });
-    cy.log('Page loaded successfully');
+    cy.visit("/", { retries: 3 });
     cy.wait(6000);
+    cy.log('Page loaded successfully');
   });
   it('Login into the application using credentials', () => {
         // cy.visit('/', { headers: { "Accept-Encoding": "gzip, deflate" } })

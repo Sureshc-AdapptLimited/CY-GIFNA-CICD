@@ -9,6 +9,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     testIsolation: false,
-    // baseUrl: "https://gifna-stage.who.int",
+    baseUrl: "https://gifna-stage.who.int",
   },
 });
