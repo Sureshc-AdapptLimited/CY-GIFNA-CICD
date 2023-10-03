@@ -1,6 +1,6 @@
 describe('template spec', () => {
     it('passes', () => {
-        cy.visit('/')
+        cy.visit('/', { headers: { "Accept-Encoding": "gzip, deflate" } })
         cy.wait(6000);
         cy.contains('button', 'Log in').click({ force: true })
         cy.wait(5000);
