@@ -17,6 +17,11 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          config: baseUrl=https://gifna-stage.who.int
+          working-directory: CY-GIFNA-CICD
+          start: npm start
+          wait-on: 'https://gifna-stage.who.int'
 
       # after the test run completes
       # store videos and any screenshots

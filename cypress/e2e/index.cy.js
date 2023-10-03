@@ -1,6 +1,6 @@
 describe('template spec', () => {
   beforeEach(function() {
-    cy.visit(('https://gifna-stage.who.int/'), {
+    cy.visit(('/'), {
       headers: {
         "Accept": "application/json, text/plain, */*",
         "User-Agent": "axios/0.18.0"
