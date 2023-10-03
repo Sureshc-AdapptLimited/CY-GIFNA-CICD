@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  beforeEach(function() {
+  beforeEach(() => {
     cy.visit(('/'), {
       headers: {
         "Accept": "application/json, text/plain, */*",
@@ -8,7 +8,8 @@ describe('template spec', () => {
     })
     cy.wait(6000);
     cy.log('Page loaded successfully');
-  });
+  })
+  
   it("Click the login button", () => {
     cy.contains('button', 'Log in').click({ force: true })
     cy.wait(5000);
