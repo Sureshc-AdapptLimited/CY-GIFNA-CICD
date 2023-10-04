@@ -9,7 +9,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     testIsolation: false,
-    baseUrl: "https://tbksp-uat.adapptlabs.com/en",
-    // baseUrl: "https://gifna-stage.who.int",
+    // baseUrl: "https://tbksp-uat.adapptlabs.com/en",
+    baseUrl: "https://gifna-stage.who.int",
   },
 });
