@@ -18,10 +18,9 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          config: baseUrl=https://gifna-stage.who.int
-          working-directory: ''
-          start: npm start
-          wait-on: 'https://gifna-stage.who.int'
+          config: baseUrl=https://tbksp-uat.adapptlabs.com/en
+          start: npm run start
+          wait-on: 'https://tbksp-uat.adapptlabs.com/en'
 
       # after the test run completes
       # store videos and any screenshots
