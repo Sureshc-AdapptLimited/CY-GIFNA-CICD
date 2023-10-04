@@ -19,7 +19,8 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           config: baseUrl=https://gifna-stage.who.int/
-          start: npm run start
+          build: npm run build
+          start: npm start  
           wait-on: 'https://gifna-stage.who.int/'
 
       # after the test run completes

@@ -1,20 +1,21 @@
 describe('template spec', () => {
-  // beforeEach(() => {
-  //   cy.visit(('/'), {
-  //     headers: {
-  //       "Accept": "application/json, text/plain, */*",
-  //       "User-Agent": "axios/0.18.0"
-  //     }
-  //   })
-  //   cy.wait(6000);
-  //   cy.log('Page loaded successfully');
-  // })
+  beforeEach(() => {
+    // cy.visit(('/'), {
+    //   headers: {
+    //     "Accept": "application/json, text/plain, */*",
+    //     "User-Agent": "axios/0.18.0"
+    //   }
+    // })
+    cy.visit('/', {timeout: 30000})
+    cy.log('Page loaded successfully');
+  })
   
   it("Click the login button", () => {
     // cy.visit('/', {timeout: 30000})
-    // cy.contains('button', 'Log in').click({ force: true })
-    cy.log('Page loaded successfully');
-    cy.wait(5000);
+    // cy.wait(5000);
+    cy.contains('button', 'Log in').click({ force: true })
+    // cy.log('Page loaded successfully');
+    cy.wait(3000);
   });
   // it('Login into the application using credentials', () => {
   //   // cy.visit('/', { headers: { "Accept-Encoding": "gzip, deflate" } })
