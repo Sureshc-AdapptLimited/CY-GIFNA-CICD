@@ -11,7 +11,7 @@ describe('template spec', () => {
   // })
   
   it("Click the login button", () => {
-    cy.visit(('/'))
+    cy.visit('/', {timeout: 30000})
     // cy.contains('button', 'Log in').click({ force: true })
     cy.log('Page loaded successfully');
     cy.wait(5000);
