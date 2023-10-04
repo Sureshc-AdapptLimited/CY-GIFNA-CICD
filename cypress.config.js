@@ -11,5 +11,6 @@ module.exports = defineConfig({
     testIsolation: false,
     // baseUrl: "https://tbksp-uat.adapptlabs.com/en",
     baseUrl: "https://gifna-stage.who.int/",
+    chromeWebSecurity: false
   },
 });
