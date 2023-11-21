@@ -13,7 +13,7 @@ describe('template spec', () => {
     //     }
     // });
     cy.visit('/', {failOnStatusCode: false})
-    cy.log('Page loaded successfully');
+    cy.log('Page loaded successfully in CICD');
   })
   
   // it("Click the login button", () => {
